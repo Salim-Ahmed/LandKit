@@ -1,0 +1,1638 @@
+@font-face {
+  font-family: Montserrat-Light;
+  src: url(../fonts/Montserrat/Montserrat-Light.ttf);
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
+
+a{
+	display: inline-block;
+	text-decoration: none;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.gap {
+	width: 100%;
+	height: 100px;
+	background-color: #CCFF00;
+}
+
+body {
+	width: 100%;
+	font-family: Montserrat-Light;
+	background-color: #fff;
+}
+
+.header {
+	width: 85%;
+	margin: 15px auto;
+	background-color: #fff;
+	border-bottom: 1px solid #C2CFF9;
+	overflow: hidden;
+}
+
+.logo {
+  width: 50%;
+  float: left;
+}
+
+.logo img {
+  cursor: pointer;
+  padding-left: 2%;
+  padding-top: 10px;
+}
+.icon {
+	display: none;
+}
+.main-menu {
+  width: 50%;
+  float: right;
+  overflow: hidden;
+}
+.main-menu nav {
+  float: right;
+  padding-right:5%;
+}
+
+.main-menu nav ul {
+  
+}
+
+.main-menu nav ul li {
+  display: inline-block;
+}
+
+.main-menu nav ul li a {
+  font-size: 16px;
+  padding: 10px 20px;
+  color: #335EEA;
+}
+
+.main-menu nav ul li a:hover {
+	color: #fff;
+	background-color: #335EEA;
+	border-radius: 10px;
+	outline: none;
+}
+
+.landing {
+	width: 90%;
+	margin: 5% auto;
+  	overflow: hidden;
+}
+.landing .landing-left {
+	margin-left: 5%;
+	margin-top: 8%;
+	float: left;
+	width: 50%;
+}
+.landing .landing-left h2 {
+	font-size: 48px;
+	font-weight: 500;
+}
+.landing .landing-left h2 span {
+	color: #335EEA;
+}
+.landing .landing-left p {
+	margin-top: 2%;
+    color: #869ab8;
+    font-size: 21px;
+    font-weight: 700;
+    margin-bottom: 5%;
+}
+.landing .landing-left .btn-grp {}
+.landing .landing-left .btn-grp .Fbtn {
+	background-color: #335eea;
+	padding: 15px 20px;
+	color: #fff;
+	font-weight: bold;
+	border-radius: 5px;
+	margin-right: 5px;
+}
+.landing .landing-left .btn-grp .Fbtn:hover {
+	background-color: #1746E0;
+}
+
+.landing .landing-left .btn-grp .Fbtn i {
+	margin-left: 15px;
+}
+.landing .landing-left .btn-grp .Sbtn {
+	background-color: #E0E6FB;
+	padding: 15px 20px;
+	color: #335eea;
+	font-weight: bold;
+	border-radius: 5px;
+	margin-right: 5px;
+
+}
+.landing .landing-left .btn-grp .Sbtn:hover {
+	box-shadow: 0px 2px 5px #7992e2;
+}
+
+.landing .landing-right {
+	margin-top: 4%;
+	float: right;
+	width: 45%;
+}
+.landing .landing-right img {
+	width: 100%;
+}
+
+.services {
+	width: 84%;
+	margin: 5% auto;
+ 	overflow: hidden;
+}
+.services .fService,
+.services .sService,
+.services .tService {
+	width: 30%;
+	float: left;
+	padding: 0 1%;
+}
+.services .fService svg,
+.services .sService svg,
+.services .tService svg {
+	width: 50px;
+	height: 50px;
+}
+.services .fService h2,
+.services .sService h2,
+.services .tService h2 {
+	font-size: 20px;
+	margin-top: 20px;
+	margin-bottom: 15px;
+}
+.services .fService p,
+.services .sService p,
+.services .tService p {
+	margin-bottom: 20px;
+	color: #939fc5;
+	font-weight: 600;
+}
+
+.partners {
+	width: 82%;
+	padding: 0 9%;
+	overflow: hidden;
+	background-color: #E0E6FB;
+}
+
+.partners div {
+	width: 16%;
+	float: left;
+	text-align: center;
+}
+
+.partners div img {
+	width: 80%;
+	padding: 30px;
+	padding-left: 10%;
+}
+
+.login {
+	width: 100%;
+	background-image: linear-gradient(to bottom, #F9FBFD , #FCFDFE);
+}
+.login .loginContainer {
+	width: 100%;
+}
+
+.login .loginContainer::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.login .loginContainer .loginContainerLeft {
+	width: 50%;
+	padding-top: 7%;
+	float: left;
+}
+.login .loginContainer .loginContainerLeft .loginContainerLeftForm {
+	width: 60%;
+	background-color: #fff;
+	margin-left: 26%;
+	border-radius: 8px;
+	box-shadow: 0px 0px 15px #999;
+}
+.login .loginContainer .loginContainerLeft .loginContainerLeftForm img {
+	width: 100%;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+.login .loginContainer .loginContainerLeft .loginContainerLeftForm .loginForm {
+	padding: 15px;
+}
+.login .loginContainer .loginContainerLeft .loginContainerLeftForm .loginForm label {
+	font-weight: bold;
+	color: #9CADC5;
+}
+.login .loginContainer .loginContainerLeft .loginContainerLeftForm .loginForm input {
+	border: none;
+    outline: none;
+    border-bottom: 1px solid #d0c9c9;
+    width: 100%;
+    margin: 12px auto;
+    font-size: 16px;
+}
+.login .loginContainer .loginContainerLeft .loginContainerLeftForm .loginForm input.dbtn {
+    border: none;
+    outline: none;
+    background-color: #64C6A9;
+    padding: 20px;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+}
+.login .loginContainer .loginContainerLeft .loginContainerLeftForm .loginForm input.dbtn:hover {
+    background-color: #389E7F;
+    
+}
+
+
+.login .loginContainer .loginContainerRight {
+	width: 50%;
+	float: right;
+	padding-top: 18%;
+}
+.login .loginContainer .loginContainerRight .headingPara {
+	font-size: 25px;
+	font-weight: bold;
+	line-height: 45px;
+}
+.login .loginContainer .loginContainerRight .contentPara {
+	font-size: 18px;
+    line-height: 25px;
+    color: #AFB8D4;
+    margin: 20px 0px;
+    width: 78%;
+}
+.login .loginContainer .loginContainerRight table {
+	width: 70%;
+}
+.login .loginContainer .loginContainerRight table tr {
+}
+.login .loginContainer .loginContainerRight table tr td,
+.right-sign {
+	font-size: 90%;
+	color: #42BA96;
+	width: 50%;
+	font-weight: bold;
+	padding: 5px 0;
+}
+.login .loginContainer .loginContainerRight table tr td i,
+.right-sign-icon  {
+	background-color: #E9F6F3;
+	font-size: 80%;
+	padding: 5px;
+	border-radius: 50%;
+	margin-right: 15px;
+}
+.right-sign-icon {
+	color: #42BA96;
+}
+
+.experience {
+	margin-top: 50px;
+	overflow: hidden;
+}
+.experience .experienceLeft {
+	float: left;
+	width: 33%;
+	padding: 8% 0 0 12%;
+}
+.experience .experienceLeft  h3 {
+	font-size: 160%;
+}
+.experience .experienceLeft  h3 span {
+	color: #335EEA;
+	padding: 10px 0;
+	display: block;
+}
+.experience .experienceLeft>p {
+	font-size: 120%;
+	padding: 15px 0;
+	color: #869ab8;
+}
+.experience .experienceLeft  .contentUp,
+.experience .experienceLeft  .contentDown {
+	overflow: hidden;
+	width: 100%;
+	margin: 10px 0;
+}
+.experience .experienceLeft  .contentUp .contentUpLogo,
+.experience .experienceLeft  .contentDown .contentDownLogo {
+	float: left;
+	width: 12%;
+}
+.experience .experienceLeft  .contentUp .contentUpLogo svg,
+.experience .experienceLeft  .contentDown .contentDownLogo svg {
+	width: 90%;
+}
+.experience .experienceLeft  .contentUp .contentUpDetails,
+.experience .experienceLeft  .contentDown .contentDownDetails {
+	float: right;
+	width: 84%;
+}
+.experience .experienceLeft  .contentUp .contentUpDetails h4,
+.experience .experienceLeft  .contentDown .contentDownDetails h4 {
+	font-size: 18px;
+	line-height: 35px;
+}
+.experience .experienceLeft  .contentUp .contentUpDetails p,
+.experience .experienceLeft  .contentDown .contentDownDetails p {
+	color: #869ab8;
+}
+.experience .experienceRight {
+	float: right;
+	width: 45%;
+	padding: 5% 0 10% 0%;
+}
+.experience .experienceRight img {
+	width: 90%;
+	transform: rotate(3deg);
+	box-shadow: 0px 0px 10px 5px #bbb;
+}
+
+.pricing {
+	width: 100%;
+	background-color: #F1F4F8;
+	padding-top: 30px;
+	padding-bottom: 60px;
+}
+.pricing .pricing-top {
+	width: 50%;
+	margin: 0 auto;
+	text-align: center;
+}
+.pricing .pricing-top h2 {
+	font-size: 32px;
+	padding: 20px 0;
+}
+.pricing .pricing-top p {
+	font-size: 20px;
+	line-height: 30px;
+	color: #8B9EBB;
+}
+.pricing .pricing-table {
+	margin-top: 4%;
+	margin-left: 14%;
+}
+.pricing .pricing-table .container {
+	margin: 0 auto;
+	overflow: hidden;
+}
+.pricing .pricing-table .container .containerLeft {
+	float: left;
+	width: 50%;
+	border-radius: 10px;
+	background-color: #FFF;
+	/*position: relative;*/
+}
+
+.contain {
+
+	padding: 5% 12% 0 15%;
+}
+
+.pricing .pricing-table .container .containerLeft .group {
+	margin: 0 auto;
+    text-align: center;
+}
+
+	
+.pricing .pricing-table .container .containerLeft .group .price-tag,
+.pricing .pricing-table .container .containerRight .price-tag {
+	color: #1f45c1;
+	background-color: #EAEFFD;
+	border-radius: 20px;
+	width: 30%;
+	margin: 2% auto;
+	padding: 2% 0%;
+	text-align: center;
+	font-size: 14px;
+	font-weight: bold;
+
+}
+.pricing .pricing-table .container .containerLeft .group .price-amount {
+	font-weight: bold;
+	font-size: 26px;
+	display: block;
+	padding-top: 25px;
+}
+.pricing .pricing-table .container .containerLeft .group .price-amount span {
+	font-size: 50px;
+}
+.pricing .pricing-table .container .containerLeft .group .price-person {
+	color: #869AB8;
+	padding-top: 5px;
+	padding-bottom: 50px;
+}
+.pricing .pricing-table .container .containerLeft ul {}
+.pricing .pricing-table .container .containerLeft ul li {
+	padding: 10px 0;
+	font-weight: bold;
+	font-size: 15px;
+}
+.pricing .pricing-table .container .containerLeft a,
+.pricing .pricing-table .container .containerRight a {
+	background-color: #446df1;
+    color: #fff;
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 600;
+    padding: 20px 0;
+    margin-top: 30px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.pricing .pricing-table .container .containerLeft a:hover {
+	background-color: #1746E0;
+}
+
+.pricing .pricing-table .container .containerRight {
+	float: left;
+	width: 40%;
+	background-color: #FBFBFB;
+	overflow: hidden;
+	margin-top: 3%;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+.pricing .pricing-table .container .containerRight .price-tag {
+	padding: 2% 3%;
+
+}
+.pricing .pricing-table .container .containerRight .price-content {
+	color: #70819a;
+	font-size: 18px;
+	text-align: center;
+	line-height: 30px;
+	margin-top: 90px;
+	margin-bottom: 120px;
+}
+.pricing .pricing-table .container .containerRight a {
+	background-color: #D9E2EF;
+	color: #506690;
+}
+
+.saveyourtime {
+	background-color: #1B2A4E;
+	text-align: center;
+	padding: 50px 0;
+}
+
+.saveyourtime h3 {
+	color: #fff;
+    font-size: 35px;
+    padding: 30px 0;
+}
+.saveyourtime p {
+    width: 50%;
+    margin: 0 auto;
+    font-weight: bold;
+    color: #7b8fb3;
+    font-size: 18px;
+    padding: 10px 0;
+
+}
+.saveyourtime a {
+	color: #fff;
+    background-color: #3abb94;
+    padding: 18px 30px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.saveyourtime a:hover {
+	background-color: #27a27d;
+}
+
+.footer {
+	width: 100%;
+}
+
+.footer .container {
+	background-color: #F1F4F8;
+	overflow: hidden;
+	width: 82%;
+	padding: 8% 8% 2% 10%;
+ }
+.footer .container .col1,
+.footer .container .col2,
+.footer .container .col3,
+.footer .container .col4,
+.footer .container .col5 {
+	float: left;
+	width: 20%;
+}
+.footer .col1 {}
+.footer .col1 img {}
+.footer .col1 p {
+	color: #506690;
+	padding: 10px 0;
+	font-weight: bold;
+}
+.footer .col1 .social-icons {
+	padding-top: 10px;
+}
+.footer .col1 .social-icons i {
+	color: #506690;
+	font-size: 20px;
+	padding-right: 15px;
+
+}
+.footer .col2 h4,
+.footer .col3 h4,
+.footer .col4 h4,
+.footer .col5 h4 {
+	font-size: 14px;
+	color: #63779C;
+	padding-bottom: 10px;
+}
+.footer .col2 a,
+.footer .col3 a,
+.footer .col4 a,
+.footer .col5 a {
+	display: block;
+	color: #A4B3CA;
+	padding-bottom: 15px;
+	font-weight: bold;
+}
+.footer .col2 a:hover,
+.footer .col3 a:hover,
+.footer .col4 a:hover,
+.footer .col5 a:hover {
+	text-decoration: underline;
+}
+
+.footer .footer-bottom {
+	background-color: #1B2A4E;
+}
+.footer .footer-bottom p {
+	text-align: center;
+	padding: 20px;
+	color: #fff;
+	font-weight: bold;
+}
+
+@media only screen and (max-width: 1100px) {
+  .logo {
+  	width: 40%;
+  }
+
+  .main-menu {
+  	width: 60%;
+  }
+
+}
+
+@media only screen and (max-width: 960px) {
+  .logo {
+  	width: 20%;
+  }
+
+  .main-menu {
+  	width: 80%;
+  }
+
+  .landing .landing-left {
+		margin-top: 5%;
+	}
+  .landing .landing-left h2 {
+		font-size: 35px;
+  }
+  .landing .landing-left p {
+		margin-top: 2%;
+		color: #869ab8;
+		font-size: 17px;
+		font-weight: 700;
+		margin-bottom: 5%;
+		line-height: 30px;
+	}
+
+}
+
+@media only screen and (max-width: 740px) {
+  .logo {
+  	width: 100%;
+  	text-align: center;
+  }
+
+  .main-menu {
+  	width: 100%;
+  	float: left;
+  	text-align: center;
+  	margin-top: 20px;
+  }
+  .main-menu nav {
+  	float: none;
+  }
+  .main-menu nav ul li a {
+	font-size: 15px;
+	padding: 10px 18px;
+  }
+  .landing .landing-left {
+		margin-left: 2%;
+		margin-top: 0%;
+		float: none;
+		width: 100%;
+	}
+	.landing .landing-left h2 {
+		font-size: 30px;
+	}
+
+	.landing .landing-left p {
+		font-size: 18px;
+		line-height: 30px;
+	}
+	.landing .landing-left .btn-grp .Fbtn, .landing .landing-left .btn-grp .Sbtn {
+		padding: 15px 20px;
+		font-size: 14px;
+	}
+
+	.landing .landing-right {
+		float: none;
+		width: 100%;
+	}
+	.services .fService,
+	.services .sService,
+	.services .tService {
+		width: 100%;
+		float: none;
+	}
+
+	.services .fService svg,
+	.services .sService svg,
+	.services .tService svg  {
+		display: block;
+		margin: 0 auto;
+	}
+
+	.services .fService h2,
+	.services .sService h2,
+	.services .tService h2 {
+		font-size: 25px;
+	}
+
+	.services .fService p, .services .sService p, .services .tService p {
+		font-size: 16px;
+		line-height: 26px;
+	}
+
+	.partners div {
+		width: 33%;
+	}
+	.login .loginContainer .loginContainerLeft {
+		width: 100%;
+		float: none;
+	}
+	.login .loginContainer .loginContainerLeft .loginContainerLeftForm {
+		width: 70%;
+		margin-left: 15%;
+	}
+	.login .loginContainer .loginContainerLeft .loginContainerLeftForm .loginForm input.dbtn {
+		font-size: 15px;	
+	}
+
+	.login .loginContainer .loginContainerRight {
+		width: 80%;
+		float: none;
+		padding-left: 10%;
+	}
+	.login .loginContainer .loginContainerRight .headingPara {
+		font-size: 22px;
+		line-height: 34px;
+	}
+	.login .loginContainer .loginContainerRight .contentPara {
+		font-size: 15px;
+		line-height: 30px;
+	}
+	.login .loginContainer .loginContainerRight table {
+		width: 100%;
+	}
+	.login .loginContainer .loginContainerRight table tr td, .right-sign {
+		font-size: 100%;
+		width: 50%;
+	}
+	.experience .experienceLeft {
+		float: none;
+		width: 100%;
+		padding: 8% 0 0 0%;
+	}
+	.experience .experienceLeft h3 {
+		font-size: 110%;
+		padding-left: 10%;
+	}
+	.experience .experienceLeft > p {
+		font-size: 100%;
+		padding: 5% 10%;
+		line-height: 20px;
+	}
+	.experience .experienceLeft .contentUp .contentUpDetails h4, .experience .experienceLeft .contentDown .contentDownDetails h4 {
+		font-size: 20px;
+		padding: 10px 5%;
+	}
+	.experience .experienceLeft .contentUp .contentUpLogo, .experience .experienceLeft .contentDown .contentDownLogo {
+		float: none;
+		margin: 0 auto;
+	}
+	.experience .experienceLeft .contentUp .contentUpDetails, .experience .experienceLeft .contentDown .contentDownDetails {
+		float: none;
+		width: 100%;
+		padding-left: 5%;
+	}
+	.experience .experienceLeft .contentUp .contentUpDetails p, .experience .experienceLeft .contentDown .contentDownDetails p {
+		color: #869ab8;
+		font-size: 15px;
+		padding-left: 5%;
+	}
+	.experience .experienceRight {
+		float: none;
+		width: 95%;
+		padding: 5% 0 10% 8%;
+	}
+	.pricing .pricing-top {
+		width: 100%;
+	}
+	.pricing .pricing-top h2 {
+		font-size: 25px;
+		line-height: 40px;
+	}
+	.pricing .pricing-top p {
+		font-size: 16px;
+		line-height: 28px;
+		width: 80%;
+		margin: 0 auto;
+	}
+	.pricing .pricing-table {
+		margin-top: 7%;
+		margin-left: 5%;
+	}
+	.pricing .pricing-table .container .containerLeft {
+		float: none;
+		width: 95%;
+		margin-bottom: 5%;
+	}
+	.contain {
+		padding: 7% 5% 5% 5%;
+	}
+
+	.pricing .pricing-table .container .containerLeft .group .price-tag, 
+	.pricing .pricing-table .container .containerRight .price-tag {
+		width: 50%;
+	}
+	.pricing .pricing-table .container .containerLeft .group .price-amount {
+		padding-top: 5px;
+	}
+	.pricing .pricing-table .container .containerLeft .group .price-amount {
+		font-size: 20px;
+	}
+	.pricing .pricing-table .container .containerLeft .group .price-amount span {
+		font-size: 40px;
+	}
+	.pricing .pricing-table .container .containerLeft .group .price-person {
+		padding-bottom: 25px;
+	}
+	.pricing .pricing-table .container .containerLeft ul li {
+		padding: 12px 0;
+		font-weight: normal;
+		font-size: 16px;
+	}
+	.pricing .pricing-table .container .containerLeft a, .pricing .pricing-table .container .containerRight a {
+		font-size: 15px;
+		padding: 15px 0;
+		margin-top: 15px;
+	}
+	.pricing .pricing-table .container .containerRight {
+		float: none;
+		width: 95%;
+		margin-top: 8%;
+	}
+	.pricing .pricing-table .container .containerRight .price-content {
+		font-size: 17px;
+		line-height: 33px;
+		margin-top: 30px;
+		margin-bottom: 35px;
+		padding-top: 30px;
+	}
+	.saveyourtime {
+		padding: 80px 0;
+	}
+	.saveyourtime h3 {
+		font-size: 23px;
+		padding: 10px 0;
+	}
+	.saveyourtime p {
+		width: 95%;
+		font-weight: normal;
+		font-size: 14px;
+		padding: 10px 0;
+		line-height: 26px;
+	}
+	.saveyourtime a {
+		padding: 12px 25px;
+		margin-top: 20px;
+		margin-bottom: 10px;
+		border-radius: 7px;
+	}
+	.footer .container {
+		width: 100%;
+		padding: 8% 0% 2% 0%;
+	}
+	.footer .container .col1 {
+		float: none;
+		width: 90%;
+		margin: 5% auto;
+	}
+	.footer .container .col2, .footer .container .col3, .footer .container .col4, .footer .container .col5 {
+		width: 25%;
+		float: left;
+		text-align: center;
+		padding-bottom: 50px;
+	}
+	.footer .col2 h4, .footer .col3 h4, .footer .col4 h4, .footer .col5 h4 {
+		font-size: 14px;
+		margin-top: 15%;
+	}
+	.footer .col2 a, .footer .col3 a, .footer .col4 a, .footer .col5 a {
+		font-size: 14px;
+	}
+	.footer .footer-bottom p {
+		padding: 20px;
+		font-size: 14px;
+	}
+	.experience .experienceLeft .contentUp .contentUpLogo svg, .experience .experienceLeft .contentDown .contentDownLogo svg {
+		width: 80%;
+	}
+	.experience .experienceLeft .contentUp .contentUpDetails h4, .experience .experienceLeft .contentDown .contentDownDetails h4 {
+		font-size: 15px;
+		padding: 10px 0;
+	}
+	.experience .experienceLeft .contentUp .contentUpDetails p, .experience .experienceLeft .contentDown .contentDownDetails p {
+		color: #869ab8;
+		font-size: 13px;
+		margin-bottom: 25px;
+	}
+	.pricing .pricing-table .container .containerLeft .group .price-tag, .pricing .pricing-table .container .containerRight .price-tag {
+		width: 35%;
+	}
+	.pricing .pricing-table .container .containerLeft .group .price-tag, .pricing .pricing-table .container .containerRight .price-tag {
+		width: 30%;
+	}
+	.saveyourtime {
+		padding: 50px 0;
+	}
+	.services .fService h2 {
+		font-size: 25px;
+		margin-top: 20px;
+		margin-bottom: 15px;
+	}
+}
+
+@media only screen and (max-width: 550px) {
+  .logo {
+  	width: 100%;
+  	text-align: center;
+  }
+
+  .main-menu {
+  	width: 100%;
+  	float: left;
+  	text-align: center;
+  	margin-top: 20px;
+  }
+  .main-menu nav ul li a {
+	font-size: 15px;
+	padding: 7px 15px;
+  }
+  .landing .landing-left {
+		margin-left: 2%;
+		margin-top: 0%;
+		float: none;
+		width: 100%;
+	}
+	.landing .landing-left h2 {
+		font-size: 24px;
+		font-weight: 400;
+	}
+
+	.landing .landing-left p {
+		margin-top: 2%;
+		color: #869ab8;
+		font-size: 15px;
+		font-weight: 500;
+		margin-bottom: 5%;
+	}
+	.landing .landing-left .btn-grp .Fbtn,
+	.landing .landing-left .btn-grp .Sbtn {
+		padding: 12px 10px;
+		font-size: 12px;
+	}
+
+	.landing .landing-right {
+		float: none;
+		width: 100%;
+	}
+	.services .fService,
+	.services .sService,
+	.services .tService {
+		width: 100%;
+		float: none;
+	}
+
+	.services .fService svg,
+	.services .sService svg,
+	.services .tService svg  {
+		display: block;
+		margin: 0 auto;
+	}
+
+	.services .fService p,
+	.services .sService p,
+	.services .tService p {
+		font-size: 14px;
+	}
+
+	.partners div {
+		width: 50%;
+	}
+	.login .loginContainer .loginContainerLeft {
+		width: 100%;
+		float: none;
+	}
+	.login .loginContainer .loginContainerLeft .loginContainerLeftForm {
+		width: 80%;
+		margin-left: 10%;
+	}
+	.login .loginContainer .loginContainerLeft .loginContainerLeftForm .loginForm input.dbtn {
+		font-size: 15px;	
+	}
+
+	.login .loginContainer .loginContainerRight {
+		width: 80%;
+		float: none;
+		padding-left: 10%;
+	}
+	.login .loginContainer .loginContainerRight .headingPara {
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.login .loginContainer .loginContainerRight .contentPara {
+		font-size: 14px;
+		width: 100%;
+	}
+	.login .loginContainer .loginContainerRight table {
+		width: 100%;
+	}
+	.login .loginContainer .loginContainerRight table tr td, .right-sign {
+		font-size: 85%;
+		width: 100%;
+		display: block;
+	}
+	.experience .experienceLeft {
+		float: none;
+		width: 100%;
+		padding: 8% 0 0 0%;
+	}
+	.experience .experienceLeft h3 {
+		font-size: 110%;
+		padding-left: 5%;
+	}
+	.experience .experienceLeft > p {
+		font-size: 85%;
+		padding: 5% 5%;
+		line-height: 20px;
+	}
+	.experience .experienceLeft .contentUp .contentUpDetails h4, .experience .experienceLeft .contentDown .contentDownDetails h4 {
+		font-size: 12px;
+	}
+	.experience .experienceLeft .contentUp .contentUpLogo, .experience .experienceLeft .contentDown .contentDownLogo {
+		float: none;
+		margin: 0 auto;
+	}
+	.experience .experienceLeft .contentUp .contentUpDetails, .experience .experienceLeft .contentDown .contentDownDetails {
+		float: none;
+		width: 100%;
+		padding-left: 5%;
+	}
+	.experience .experienceRight {
+		float: none;
+		width: 95%;
+		padding: 5% 0 10% 8%;
+	}
+	.pricing .pricing-top {
+		width: 100%;
+	}
+	.pricing .pricing-top h2 {
+		font-size: 20px;
+		padding: 15px 0;
+	}
+	.pricing .pricing-top p {
+		font-size: 13px;
+		line-height: 25px;	
+	}
+	.pricing .pricing-table {
+		margin-top: 7%;
+		margin-left: 5%;
+	}
+	.pricing .pricing-table .container .containerLeft {
+		float: none;
+		width: 95%;
+		margin-bottom: 5%;
+	}
+	.contain {
+		padding: 7% 5% 0 5%;
+	}
+	.pricing .pricing-table .container .containerLeft .group .price-tag, 
+	.pricing .pricing-table .container .containerRight .price-tag {
+		width: 50%;
+	}
+	.pricing .pricing-table .container .containerLeft .group .price-amount {
+		padding-top: 5px;
+	}
+	.pricing .pricing-table .container .containerLeft .group .price-amount {
+		font-size: 20px;
+	}
+	.pricing .pricing-table .container .containerLeft .group .price-amount span {
+		font-size: 40px;
+	}
+	.pricing .pricing-table .container .containerLeft .group .price-person {
+		padding-bottom: 25px;
+	}
+	.pricing .pricing-table .container .containerLeft ul li {
+		padding: 10px 0;
+		font-weight: normal;
+		font-size: 13px;
+	}
+	.pricing .pricing-table .container .containerLeft a, .pricing .pricing-table .container .containerRight a {
+		font-size: 15px;
+		padding: 15px 0;
+		margin-top: 15px;
+	}
+	.pricing .pricing-table .container .containerRight {
+		float: none;
+		width: 95%;
+		margin-top: 8%;
+	}
+	.pricing .pricing-table .container .containerRight .price-content {
+		font-size: 13px;
+		line-height: 28px;
+		margin-top: 30px;
+		margin-bottom: 35px;
+	}
+	.saveyourtime {
+		padding: 20px 0;
+	}
+	.saveyourtime h3 {
+		font-size: 23px;
+		padding: 10px 0;
+	}
+	.saveyourtime p {
+		width: 95%;
+		font-weight: normal;
+		font-size: 14px;
+		padding: 10px 0;
+		line-height: 26px;
+	}
+	.saveyourtime a {
+		padding: 12px 25px;
+		margin-top: 20px;
+		margin-bottom: 10px;
+		border-radius: 7px;
+	}
+	.footer .container {
+		width: 100%;
+		padding: 8% 0% 2% 0%;
+	}
+	.footer .container .col1, .footer .container .col2, .footer .container .col3, .footer .container .col4, .footer .container .col5 {
+		float: none;
+		width: 90%;
+		margin: 5% auto;
+	}
+	.footer .col2 h4, .footer .col3 h4, .footer .col4 h4, .footer .col5 h4 {
+		font-size: 14px;
+		margin-top: 15%;
+	}
+	.footer .col2 a, .footer .col3 a, .footer .col4 a, .footer .col5 a {
+		font-size: 14px;
+	}
+	.footer .footer-bottom p {
+		padding: 15px;
+		font-size: 12px;
+	}
+	.experience .experienceLeft .contentUp .contentUpLogo svg, .experience .experienceLeft .contentDown .contentDownLogo svg {
+		width: 80%;
+	}
+	.experience .experienceLeft .contentUp .contentUpDetails h4, .experience .experienceLeft .contentDown .contentDownDetails h4 {
+		font-size: 15px;
+		padding: 10px 0;
+	}
+	.experience .experienceLeft .contentUp .contentUpDetails p, .experience .experienceLeft .contentDown .contentDownDetails p {
+		color: #869ab8;
+		font-size: 13px;
+		margin-bottom: 25px;
+	}
+	.pricing .pricing-table .container .containerLeft .group .price-tag, .pricing .pricing-table .container .containerRight .price-tag {
+		width: 35%;
+	}
+	.pricing .pricing-table .container .containerLeft .group .price-tag, .pricing .pricing-table .container .containerRight .price-tag {
+		width: 30%;
+	}
+	.saveyourtime {
+		padding: 50px 0;
+	}
+}
+
+
+@media only screen and (max-width: 450px) {
+  .logo {
+  	width: 100%;
+  	text-align: center;
+  }
+
+  .icon {
+  	display: block;
+  	float: right;
+  }
+
+  .main-menu {
+  	width: 100%;
+  	float: left;
+  	text-align: center;
+  }
+  .main-menu nav ul li {
+	display: block;
+  }
+  .landing .landing-left {
+		margin-left: 2%;
+		margin-top: 0%;
+		float: none;
+		width: 100%;
+	}
+	.landing .landing-left h2 {
+		font-size: 24px;
+		font-weight: 400;
+	}
+
+	.landing .landing-left p {
+		margin-top: 2%;
+		color: #869ab8;
+		font-size: 15px;
+		font-weight: 500;
+		margin-bottom: 5%;
+	}
+	.landing .landing-left .btn-grp .Fbtn,
+	.landing .landing-left .btn-grp .Sbtn {
+		padding: 12px 10px;
+		font-size: 12px;
+	}
+
+	.landing .landing-right {
+		float: none;
+		width: 100%;
+	}
+	.services .fService,
+	.services .sService,
+	.services .tService {
+		width: 100%;
+		float: none;
+	}
+
+	.services .fService svg,
+	.services .sService svg,
+	.services .tService svg  {
+		display: block;
+		margin: 0 auto;
+	}
+
+	.services .fService p,
+	.services .sService p,
+	.services .tService p {
+		font-size: 14px;
+	}
+
+	.partners div {
+		width: 50%;
+	}
+	.login .loginContainer .loginContainerLeft {
+		width: 100%;
+		float: none;
+	}
+	.login .loginContainer .loginContainerLeft .loginContainerLeftForm {
+		width: 80%;
+		margin-left: 10%;
+	}
+	.login .loginContainer .loginContainerLeft .loginContainerLeftForm .loginForm input.dbtn {
+		font-size: 15px;	
+	}
+
+	.login .loginContainer .loginContainerRight {
+		width: 80%;
+		float: none;
+		padding-left: 10%;
+	}
+	.login .loginContainer .loginContainerRight .headingPara {
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.login .loginContainer .loginContainerRight .contentPara {
+		font-size: 14px;
+		width: 100%;
+	}
+	.login .loginContainer .loginContainerRight table {
+		width: 100%;
+	}
+	.login .loginContainer .loginContainerRight table tr td, .right-sign {
+		font-size: 85%;
+		width: 100%;
+		display: block;
+	}
+	.experience .experienceLeft {
+		float: none;
+		width: 100%;
+		padding: 8% 0 0 0%;
+	}
+	.experience .experienceLeft h3 {
+		font-size: 110%;
+		padding-left: 5%;
+	}
+	.experience .experienceLeft > p {
+		font-size: 85%;
+		padding: 5% 5%;
+		line-height: 20px;
+	}
+	.experience .experienceLeft .contentUp .contentUpDetails h4, .experience .experienceLeft .contentDown .contentDownDetails h4 {
+		font-size: 12px;
+	}
+	.experience .experienceLeft .contentUp .contentUpLogo, .experience .experienceLeft .contentDown .contentDownLogo {
+		float: none;
+		margin: 0 auto;
+	}
+	.experience .experienceLeft .contentUp .contentUpDetails, .experience .experienceLeft .contentDown .contentDownDetails {
+		float: none;
+		width: 100%;
+		padding-left: 5%;
+	}
+	.experience .experienceRight {
+		float: none;
+		width: 95%;
+		padding: 5% 0 10% 8%;
+	}
+	.pricing .pricing-top {
+		width: 100%;
+	}
+	.pricing .pricing-top h2 {
+		font-size: 20px;
+		padding: 15px 0;
+	}
+	.pricing .pricing-top p {
+		font-size: 13px;
+		line-height: 25px;	
+	}
+	.pricing .pricing-table {
+		margin-top: 7%;
+		margin-left: 5%;
+	}
+	.pricing .pricing-table .container .containerLeft {
+		float: none;
+		width: 95%;
+		margin-bottom: 5%;
+	}
+	.contain {
+		padding: 7% 5% 0 5%;
+	}
+	.pricing .pricing-table .container .containerLeft .group .price-tag, 
+	.pricing .pricing-table .container .containerRight .price-tag {
+		width: 50%;
+	}
+	.pricing .pricing-table .container .containerLeft .group .price-amount {
+		padding-top: 5px;
+	}
+	.pricing .pricing-table .container .containerLeft .group .price-amount {
+		font-size: 20px;
+	}
+	.pricing .pricing-table .container .containerLeft .group .price-amount span {
+		font-size: 40px;
+	}
+	.pricing .pricing-table .container .containerLeft .group .price-person {
+		padding-bottom: 25px;
+	}
+	.pricing .pricing-table .container .containerLeft ul li {
+		padding: 10px 0;
+		font-weight: normal;
+		font-size: 13px;
+	}
+	.pricing .pricing-table .container .containerLeft a, .pricing .pricing-table .container .containerRight a {
+		font-size: 15px;
+		padding: 15px 0;
+		margin-top: 15px;
+	}
+	.pricing .pricing-table .container .containerRight {
+		float: none;
+		width: 95%;
+		margin-top: 8%;
+	}
+	.pricing .pricing-table .container .containerRight .price-content {
+		font-size: 13px;
+		line-height: 28px;
+		margin-top: 30px;
+		margin-bottom: 35px;
+	}
+	.saveyourtime {
+		padding: 20px 0;
+	}
+	.saveyourtime h3 {
+		font-size: 23px;
+		padding: 10px 0;
+	}
+	.saveyourtime p {
+		width: 95%;
+		font-weight: normal;
+		font-size: 14px;
+		padding: 10px 0;
+		line-height: 26px;
+	}
+	.saveyourtime a {
+		padding: 12px 25px;
+		margin-top: 20px;
+		margin-bottom: 10px;
+		border-radius: 7px;
+	}
+	.footer .container {
+		width: 100%;
+		padding: 8% 0% 2% 0%;
+	}
+	.footer .container .col1, .footer .container .col2, .footer .container .col3, .footer .container .col4, .footer .container .col5 {
+		float: none;
+		width: 90%;
+		margin: 5% auto;
+	}
+	.footer .col2 h4, .footer .col3 h4, .footer .col4 h4, .footer .col5 h4 {
+		font-size: 14px;
+		margin-top: 15%;
+	}
+	.footer .col2 a, .footer .col3 a, .footer .col4 a, .footer .col5 a {
+		font-size: 14px;
+	}
+	.footer .footer-bottom p {
+		padding: 15px;
+		font-size: 12px;
+	}
+
+}
+
+
+@media only screen and (max-width: 375px) {
+  .logo {
+  	width: 100%;
+  	text-align: center;
+  }
+
+  .icon {
+  	display: block;
+  	float: right;
+  }
+
+  .main-menu {
+  	width: 100%;
+  	float: left;
+  	text-align: center;
+  }
+  .main-menu nav ul li {
+	display: block;
+  }
+  .landing .landing-left {
+		margin-left: 2%;
+		margin-top: 0%;
+		float: none;
+		width: 100%;
+	}
+	.landing .landing-left h2 {
+		font-size: 24px;
+		font-weight: 400;
+	}
+
+	.landing .landing-left p {
+		margin-top: 2%;
+		color: #869ab8;
+		font-size: 15px;
+		font-weight: 500;
+		margin-bottom: 5%;
+	}
+	.landing .landing-left .btn-grp .Fbtn,
+	.landing .landing-left .btn-grp .Sbtn {
+		padding: 12px 10px;
+		font-size: 12px;
+	}
+
+	.landing .landing-right {
+		float: none;
+		width: 100%;
+	}
+	.services .fService,
+	.services .sService,
+	.services .tService {
+		width: 100%;
+		float: none;
+	}
+
+	.services .fService svg,
+	.services .sService svg,
+	.services .tService svg  {
+		display: block;
+		margin: 0 auto;
+	}
+
+	.services .fService p,
+	.services .sService p,
+	.services .tService p {
+		font-size: 14px;
+	}
+
+	.partners div {
+		width: 50%;
+	}
+	.login .loginContainer .loginContainerLeft {
+		width: 100%;
+		float: none;
+	}
+	.login .loginContainer .loginContainerLeft .loginContainerLeftForm {
+		width: 80%;
+		margin-left: 10%;
+	}
+	.login .loginContainer .loginContainerLeft .loginContainerLeftForm .loginForm input.dbtn {
+		font-size: 15px;	
+	}
+
+	.login .loginContainer .loginContainerRight {
+		width: 80%;
+		float: none;
+		padding-left: 10%;
+	}
+	.login .loginContainer .loginContainerRight .headingPara {
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.login .loginContainer .loginContainerRight .contentPara {
+		font-size: 14px;
+		width: 100%;
+	}
+	.login .loginContainer .loginContainerRight table {
+		width: 100%;
+	}
+	.login .loginContainer .loginContainerRight table tr td, .right-sign {
+		font-size: 85%;
+		width: 100%;
+		display: block;
+	}
+	.experience .experienceLeft {
+		float: none;
+		width: 100%;
+		padding: 8% 0 0 0%;
+	}
+	.experience .experienceLeft h3 {
+		font-size: 110%;
+		padding-left: 5%;
+	}
+	.experience .experienceLeft > p {
+		font-size: 85%;
+		padding: 5% 5%;
+		line-height: 20px;
+	}
+	.experience .experienceLeft .contentUp .contentUpDetails h4, .experience .experienceLeft .contentDown .contentDownDetails h4 {
+		font-size: 12px;
+	}
+	.experience .experienceLeft .contentUp .contentUpLogo, .experience .experienceLeft .contentDown .contentDownLogo {
+		float: none;
+		margin: 0 auto;
+	}
+	.experience .experienceLeft .contentUp .contentUpDetails, .experience .experienceLeft .contentDown .contentDownDetails {
+		float: none;
+		width: 100%;
+		padding-left: 5%;
+	}
+	.experience .experienceRight {
+		float: none;
+		width: 95%;
+		padding: 5% 0 10% 8%;
+	}
+	.pricing .pricing-top {
+		width: 100%;
+	}
+	.pricing .pricing-top h2 {
+		font-size: 20px;
+		padding: 15px 0;
+	}
+	.pricing .pricing-top p {
+		font-size: 13px;
+		line-height: 25px;	
+	}
+	.pricing .pricing-table {
+		margin-top: 7%;
+		margin-left: 5%;
+	}
+	.pricing .pricing-table .container .containerLeft {
+		float: none;
+		width: 95%;
+		margin-bottom: 5%;
+	}
+	.contain {
+		padding: 7% 5% 0 5%;
+	}
+	.pricing .pricing-table .container .containerLeft .group .price-tag, 
+	.pricing .pricing-table .container .containerRight .price-tag {
+		width: 50%;
+	}
+	.pricing .pricing-table .container .containerLeft .group .price-amount {
+		padding-top: 5px;
+	}
+	.pricing .pricing-table .container .containerLeft .group .price-amount {
+		font-size: 20px;
+	}
+	.pricing .pricing-table .container .containerLeft .group .price-amount span {
+		font-size: 40px;
+	}
+	.pricing .pricing-table .container .containerLeft .group .price-person {
+		padding-bottom: 25px;
+	}
+	.pricing .pricing-table .container .containerLeft ul li {
+		padding: 10px 0;
+		font-weight: normal;
+		font-size: 13px;
+	}
+	.pricing .pricing-table .container .containerLeft a, .pricing .pricing-table .container .containerRight a {
+		font-size: 15px;
+		padding: 15px 0;
+		margin-top: 15px;
+	}
+	.pricing .pricing-table .container .containerRight {
+		float: none;
+		width: 95%;
+		margin-top: 8%;
+	}
+	.pricing .pricing-table .container .containerRight .price-content {
+		font-size: 13px;
+		line-height: 28px;
+		margin-top: 30px;
+		margin-bottom: 35px;
+	}
+	.saveyourtime {
+		padding: 20px 0;
+	}
+	.saveyourtime h3 {
+		font-size: 23px;
+		padding: 10px 0;
+	}
+	.saveyourtime p {
+		width: 95%;
+		font-weight: normal;
+		font-size: 14px;
+		padding: 10px 0;
+		line-height: 26px;
+	}
+	.saveyourtime a {
+		padding: 12px 25px;
+		margin-top: 20px;
+		margin-bottom: 10px;
+		border-radius: 7px;
+	}
+	.footer .container {
+		width: 100%;
+		padding: 8% 0% 2% 0%;
+	}
+	.footer .container .col1, .footer .container .col2, .footer .container .col3, .footer .container .col4, .footer .container .col5 {
+		float: none;
+		width: 90%;
+		margin: 5% auto;
+	}
+	.footer .col2 h4, .footer .col3 h4, .footer .col4 h4, .footer .col5 h4 {
+		font-size: 14px;
+		margin-top: 15%;
+	}
+	.footer .col2 a, .footer .col3 a, .footer .col4 a, .footer .col5 a {
+		font-size: 14px;
+	}
+	.footer .footer-bottom p {
+		padding: 15px;
+		font-size: 12px;
+	}
+
+}
